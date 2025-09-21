@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold text-blue-600">MyLogo</a>
+                </div>
+
+                <!-- Menu (Desktop) -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#" class="text-gray-600 hover:text-blue-600">Home</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600">About</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600">Services</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600">Contact</a>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Login</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="focus:outline-none">
+                        <svg class="h-6 w-6 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+            <a href="#" class="block py-2 text-gray-600 hover:text-blue-600">Home</a>
+            <a href="#" class="block py-2 text-gray-600 hover:text-blue-600">About</a>
+            <a href="#" class="block py-2 text-gray-600 hover:text-blue-600">Services</a>
+            <a href="#" class="block py-2 text-gray-600 hover:text-blue-600">Contact</a>
+            <button class="w-full bg-blue-600 text-white px-4 py-2 mt-2 rounded hover:bg-blue-700">Login</button>
+        </div>
+    </nav>
+
+    <!-- Content Spacer -->
+    <div class="pt-20">
+        <div class="max-w-4xl mx-auto p-4">
+            <h1 class="text-3xl font-bold">Welcome to the Website</h1>
+            <p class="mt-4 text-gray-700">This is an example page with a responsive Tailwind CSS navbar.</p>
+        </div>
+    </div>
+
+    <!-- Tombol FSRI -->
+    <h1
+        class="bg-gradient-to-r from-green-400 via-emerald-500 to-green-600 text-white font-semibold py-2 px-6 rounded-lg shadow hover:shadow-lg transition-all duration-300 hover:scale-105 w-10">
+        FSRI
+    </h1>
+
+    <h2>pelajaran</h2>
+
+
+  <!-- Container -->
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Title -->
+    <h1 class="text-3xl font-bold mb-6 text-center">Tailwind CSS Grid Template</h1>
+
+    <!-- Grid Layout -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Card 1 -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <h2 class="text-xl font-semibold mb-2">Card Title 1</h2>
+        <p class="text-gray-600">This is some content inside a grid item. Responsive and reusable.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <h2 class="text-xl font-semibold mb-2">Card Title 2</h2>
+        <p class="text-gray-600">Another grid item. Tailwind makes it easy to manage layouts.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <h2 class="text-xl font-semibold mb-2">Card Title 3</h2>
+        <p class="text-gray-600">Cards auto-wrap based on screen size using responsive classes.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <h2 class="text-xl font-semibold mb-2">Card Title 4</h2>
+        <p class="text-gray-600">Easily extend this layout by adding more grid items.</p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <h2 class="text-xl font-semibold mb-2">Card Title 5</h2>
+        <p class="text-gray-600">Change `grid-cols-*` to control column count per screen size.</p>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <h2 class="text-xl font-semibold mb-2">Card Title 6</h2>
+        <p class="text-gray-600">Perfect for dashboards, blogs, portfolios, etc.</p>
+      </div>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>
