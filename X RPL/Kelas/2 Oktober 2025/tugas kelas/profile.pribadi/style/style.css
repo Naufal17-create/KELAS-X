@@ -1,0 +1,33 @@
+body {
+    background: linear-gradient(#9a08dd 0%, #dd4c4f 40%, #7420d3 100%);
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.profileimage {
+    width: 300px;
+}
+
+.proflie h2 {
+    color: white;
+}
+
+.proflie h4 {
+    color: white;
+    transform: translateY(-10px);
+}
+
+.biodata {
+    background: linear-gradient(#ffefff 0%, #ffffffd5 40%, #fdfdfd00 100%);
+    padding-bottom: 50px;
+}
+
+.footer {
+    background-color: #ffffff;
+}
