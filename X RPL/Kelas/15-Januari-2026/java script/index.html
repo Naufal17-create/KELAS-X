@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar javascript</title>
+</head>
+<body>
+    <h1 id="judul"></h1>
+    <p id="isi"></p>
+    <input type="number" id="bill1" value="">
+    <input type="number" id="bill2" value="">
+    <button onclick="hitung()">Hitung</button>
+
+    <h1 id="zodiakanda">Zodiak Anda</h1>
+    <input type="number" id="bulan" placeholder="bulan">
+    <input type="number" id="tanggal" placeholder="tanggal">
+    <button onclick="zodiak()">Cek Zodiak</button>
+
+    <h1 id="nilaianda">Nilai Anda</h1>
+    <input type="number" id="nilai" placeholder="nilai">
+    <button onclick="konversiNilai()">Cek Nilai</button>
+
+
+    <script>
+        function hitung() {
+            let hasil = document.getElementById("judul");
+            let bill1 = document.getElementById("bill1").value;
+            let bill2 = document.getElementById("bill2").value;
+
+            hasil.innerHTML = parseInt(bill1) + parseInt(bill2); 
+        }
+
+        function zodiak() {
+            let bulan = parseInt(document.getElementById("bulan").value);
+            let tanggal = parseInt(document.getElementById("tanggal").value);
+            let zodiakanda = document.getElementById("zodiakanda");
+
+            if (bulan < 1 || bulan > 12) {
+                alert("Bulan salah !");
+            } else {
+            if (tanggal < 1 || tanggal > 31) {
+                alert("Tanggal salah !");
+            } else {
+
+            if (bulan == 1) {
+                if (tanggal >= 20) {
+                    zodiakanda.innerHTML = "Aquarius";
+                } else {
+                    zodiakanda.innerHTML = "Capricorn";
+                }
+            }
+
+            else if (bulan == 2) {
+                if (tanggal >= 19) {
+                    zodiakanda.innerHTML = "Pisces";
+                } else {
+                    zodiakanda.innerHTML = "Aquarius";
+                }
+            }
+
+            else if (bulan == 3) {
+                if (tanggal >= 21) {
+                    zodiakanda.innerHTML = "Aries";
+                } else {
+                    zodiakanda.innerHTML = "Pisces";
+                }
+            }
+
+            else if (bulan == 4) {
+                if (tanggal >= 20) {
+                    zodiakanda.innerHTML = "Taurus";
+                } else {
+                    zodiakanda.innerHTML = "Aries";
+                }
+            }
+        
+            else if (bulan == 5) {
+                if (tanggal >= 21) {
+                    zodiakanda.innerHTML = "Gemini";
+                } else {
+                    zodiakanda.innerHTML = "Taurus";
+                }
+            }
+
+            else if (bulan == 6) {
+                if (tanggal >= 21) {
+                    zodiakanda.innerHTML = "Cancer";
+                } else {
+                    zodiakanda.innerHTML = "Gemini";
+                }
+            }
+
+            else if (bulan == 7) {
+                if (tanggal >= 23) {
+                    zodiakanda.innerHTML = "Leo";
+                } else {
+                    zodiakanda.innerHTML = "Cancer";
+                }
+            }
+
+            else if (bulan == 8) {
+                if (tanggal >= 23) {
+                    zodiakanda.innerHTML = "Virgo";
+                } else {
+                    zodiakanda.innerHTML = "Leo";
+                }
+            }
+
+            else if (bulan == 9) {
+                if (tanggal >= 23) {
+                    zodiakanda.innerHTML = "Libra";
+                } else {
+                    zodiakanda.innerHTML = "Virgo";
+                }
+            }
+
+            else if (bulan == 10) {
+                if (tanggal >= 23) {
+                    zodiakanda.innerHTML = "Scorpio";
+                } else {
+                    zodiakanda.innerHTML = "Libra";
+                }
+            }
+
+            else if (bulan == 11) {
+                if (tanggal >= 22) {
+                    zodiakanda.innerHTML = "Sagittarius";
+                } else {
+                    zodiakanda.innerHTML = "Scorpio";
+                }
+            }
+
+            else if (bulan == 12) {
+                if (tanggal >= 22) {
+                    zodiakanda.innerHTML = "Capricorn";
+                } else {
+                    zodiakanda.innerHTML = "Sagittarius";
+                }
+            }
+
+        }
+        }
+        }
+
+        // Tugas : Buatlah konvensi nilai. JIka 90 - 100 = A, 
+        // 70 - 89 = B, 
+        // 60 - 69 = C, 
+        // 50 - 59 = D, 
+        // < 50 = E
+
+        function konversiNilai() {
+        let nilai = parseInt(document.getElementById("nilai").value);
+        let nilaiAnda = document.getElementById("nilaianda");
+
+        if (isNaN(nilai) || nilai < 0 || nilai > 100) {
+            nilaiAnda.innerHTML = "Nilai tidak valid";
+        } else if (nilai >= 90) {
+            nilaiAnda.innerHTML = "A";
+        } else if (nilai >= 70) {
+            nilaiAnda.innerHTML = "B";
+        } else if (nilai >= 60) {
+            nilaiAnda.innerHTML = "C";
+        } else if (nilai >= 50) {
+            nilaiAnda.innerHTML = "D";
+        } else {
+            nilaiAnda.innerHTML = "E";
+        }
+    }
+
+    </script>
+</body>
+</html>
