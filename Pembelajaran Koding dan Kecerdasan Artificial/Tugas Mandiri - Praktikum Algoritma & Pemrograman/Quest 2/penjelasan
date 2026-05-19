@@ -1,0 +1,5 @@
+.isdigit() → cek apakah karakter adalah angka (0–9)
+
+.isalpha() → cek apakah karakter adalah huruf (A–Z / a–z)
+
+Kita pakai elif supaya karakter tidak dihitung dua kali

@@ -1,0 +1,7 @@
+Mengecek setiap angka satu per satu.
+
+Jika angkanya lebih besar dari 151, angka tersebut tidak ditampilkan.
+
+Jika angkanya habis dibagi 3 (modulus 3 = 0), maka angka tersebut akan dicetak.
+
+Hasil akhirnya hanya menampilkan bilangan <= 151 yang habis dibagi 3.

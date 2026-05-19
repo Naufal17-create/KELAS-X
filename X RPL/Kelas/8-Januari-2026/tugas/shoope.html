@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopID | Belanja Online Mudah & Aman</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f5f5;
+      min-width: 1200px;
+    }
+
+    /* ===== TOP BAR ===== */
+    .topbar {
+      background: linear-gradient(180deg, #ff5722, #ff784e);
+      color: #fff;
+      font-size: 13px;
+    }
+
+    .container {
+      width: 1200px;
+      margin: auto;
+    }
+
+    .topbar-flex {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+    }
+
+    .topbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 12px;
+    }
+
+    .divider {
+      border-right: 1px solid rgba(255,255,255,.4);
+      margin: 0 8px;
+    }
+
+    /* ===== HEADER ===== */
+    .header {
+      padding: 18px 0;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .search-box {
+      flex: 1;
+    }
+
+    .search-inner {
+      display: flex;
+      background: #fff;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .search-inner input {
+      flex: 1;
+      border: none;
+      padding: 12px;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .search-inner button {
+      width: 60px;
+      border: none;
+      background: #ff5722;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .keyword {
+      margin-top: 6px;
+      font-size: 12px;
+    }
+
+    .keyword a {
+      color: #fff;
+      margin-right: 10px;
+      text-decoration: none;
+    }
+
+    /* ===== BANNER ===== */
+    .banner {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 8px;
+      height: 240px;
+    }
+
+    .banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .banner-right {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 8px;
+    }
+
+    /* ===== MENU ICON ===== */
+    .menu {
+      background: #fff;
+      margin-top: 20px;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      gap: 10px;
+      border: 1px solid rgba(0,0,0,.05);
+    }
+
+    .menu-item {
+      text-align: center;
+      cursor: pointer;
+      font-size: 13px;
+      color: #333;
+    }
+
+    .menu-item img {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+      margin: 25px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar-flex">
+      <div>
+        <a href="#">Seller Centre</a>
+        <span class="divider"></span>
+        <a href="#">Mulai Jual</a>
+        <span class="divider"></span>
+        <a href="#">Download</a>
+      </div>
+      <div>
+        <a href="#">Notifikasi</a>
+        <a href="#">Bantuan</a>
+        <a href="#"><b>Daftar</b></a>
+        <span class="divider"></span>
+        <a href="#"><b>Login</b></a>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <div class="container header">
+      <div class="logo">🛍 ShopID</div>
+
+      <div class="search-box">
+        <div class="search-inner">
+          <input type="text" placeholder="Cari produk favoritmu...">
+          <button>🔍</button>
+        </div>
+        <div class="keyword">
+          <a href="#">Sepatu Wanita</a>
+          <a href="#">Tas Pria</a>
+          <a href="#">Headset</a>
+          <a href="#">Skincare</a>
+        </div>
+      </div>
+
+      <div>🛒</div>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <main class="container">
+
+    <!-- BANNER -->
+    <div class="banner">
+      <img src="img/shopee_banner_main.png" alt="">
+      <div class="banner-right">
+        <img src="img/shopee_banner_right_top.png" alt="">
+        <img src="img/shopee_banner_right_bottom.png" alt="">
+      </div>
+    </div>
+
+    <!-- MENU -->
+    <div class="menu">
+      <div class="menu-item"><img src="img/icon_lokal.png">Pilih Lokal</div>
+      <div class="menu-item"><img src="img/icon_mall.png">Mall</div>
+      <div class="menu-item"><img src="img/icon_pulsa.png">Pulsa</div>
+      <div class="menu-item"><img src="img/icon_flash.png">Flash Sale</div>
+      <div class="menu-item"><img src="img/icon_supermarket.png">Market</div>
+      <div class="menu-item"><img src="img/icon_dikelola.png">Dikelola</div>
+      <div class="menu-item"><img src="img/icon_fitcheck.png">FitCheck</div>
+      <div class="menu-item"><img src="img/icon_ongkir.png">Gratis Ongkir</div>
+      <div class="menu-item"><img src="img/icon_barokah.png">Barokah</div>
+      <div class="menu-item"><img src="img/icon_promo.png">Promo</div>
+    </div>
+
+  </main>
+
+  <footer>
+    © 2026 ShopID. All Rights Reserved.
+  </footer>
+
+</body>
+</html>

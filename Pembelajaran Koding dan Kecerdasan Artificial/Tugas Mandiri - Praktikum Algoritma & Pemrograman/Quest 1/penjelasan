@@ -1,0 +1,7 @@
+input() → untuk menerima pilihan pemain
+
+if – elif – else → untuk menentukan pemenang
+
+while True → untuk mengulangi permainan
+
+.lower() → agar input huruf besar/kecil tetap terbaca

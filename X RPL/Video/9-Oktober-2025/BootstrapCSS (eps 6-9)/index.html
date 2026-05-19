@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BootstrapCSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- episode 4 -->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/violin 1.0.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide</h5><p>Isi slide pertama</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/violin 2.0.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide</h5><p>Isi slide kedua</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/violin 3.0.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide</h5><p>Isi slide ketiga</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- episode 5 -->
+    <div id="promo" class="p-5 mb-4 bg-secondary text-white rounded-3">
+      <div class="container-fluid py-5 text-start">
+        <h1 class="display-4 fw-bold">Promo Murah!</h1>
+        <p class="fs-4">Ini adalah jumbotron versi Bootstrap 5 dengan garis pemisah.</p>
+
+        <!-- Gambar violin di atas garis -->
+        <img src="img/violin 2.jpg" alt="Violin Diskon" class="img-fluid mb-3" style="max-width: 300px;">
+
+        <!-- Harga violin dengan diskon -->
+        <p class="fs-3 fw-bold">
+          Harga: <del>Rp 5.000.000</del> <span class="text-warning">Rp 3.500.000</span> <small class="text-light">(Diskon 30%)</small>
+        </p>
+
+        <hr class="my-4" style="border-color: rgba(255, 255, 255, 0.3);">
+
+        <p>Gunakan utility class Bootstrap untuk membangun layout jumbotron sesuai kebutuhan.</p>
+        <a class="btn btn-light btn-lg" href="#" role="button">Pelajari Lebih Lanjut</a>
+
+        <!-- Tambahan Promo Spesial -->
+        <div class="mt-5 bg-light text-dark rounded-3 p-4">
+          <h2 class="display-5 fw-bold">Promo Spesial!</h2>
+          <p class="fs-4">Dapatkan diskon menarik untuk produk pilihan kami.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- episode 6 -->
+    <div id="produk" class="container my-5">
+      <div class="row justify-content-center g-4">
+
+        <!-- Card 1 -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100">
+            <img src="img/violin 1.jpg" class="card-img-top" alt="Violin + Buku">
+            <div class="card-body">
+              <h5 class="card-title">Violin + Buku Panduan</h5>
+              <p class="card-text">Paket lengkap untuk pemula, dilengkapi buku belajar violin dari nol.</p>
+              <p class="fw-bold">Rp 2.000.000</p>
+              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100">
+            <img src="img/violin 2.jpg" class="card-img-top" alt="Violin Kayu Jati">
+            <div class="card-body">
+              <h5 class="card-title">Violin Kayu Jati</h5>
+              <p class="card-text">Dibuat dari kayu jati berkualitas tinggi, menghasilkan suara hangat dan tahan lama.</p>
+              <p class="fw-bold">Rp 3.500.000</p>
+              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100">
+            <img src="img/violin 3.jpg" class="card-img-top" alt="Violin Kayu Maple">
+            <div class="card-body">
+              <h5 class="card-title">Violin Kayu Maple</h5>
+              <p class="card-text">Violin eksklusif dari kayu maple, suara tajam dan resonansi kuat.</p>
+              <p class="fw-bold">Rp 4.200.000</p>
+              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- episode 7 -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Hubungi Kami</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Form Kontak -->
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="nameInput" class="form-label">Nama</label>
+                  <input type="text" class="form-control" id="nameInput" placeholder="Masukkan nama lengkap" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="cityInput" class="form-label">Kota</label>
+                  <input type="text" class="form-control" id="cityInput" placeholder="Masukkan kota" required>
+                </div>
+                <div class="col-12">
+                  <label for="addressInput" class="form-label">Alamat</label>
+                  <input type="text" class="form-control" id="addressInput" placeholder="Masukkan alamat lengkap" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="postalCodeInput" class="form-label">Kode Pos</label>
+                  <input type="text" class="form-control" id="postalCodeInput" placeholder="Masukkan kode pos" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="emailInput" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="emailInput" placeholder="Masukkan email" required>
+                  <div id="emailHelp" class="form-text">Kami tidak akan membagikan email Anda ke siapa pun.</div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="checkInput">
+                    <label class="form-check-label" for="checkInput">Ingat saya</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary w-100">Kirim Pesan</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- episode 8 -->
+    <form style="display: none;">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <!-- episode 9 (bagian 1) -->   
+      <!-- Banner Diskon -->
+        <div class="bg-secondary text-white text-center py-3 mb-4">
+          <div class="container">
+            <h2 class="fw-bold m-0">Diskon Spesial 50% untuk Semua Produk Violin!</h2>
+          </div>
+        </div>
+
+
+        <div class="container">
+        <div class="row align-items-center">
+
+        <!-- Foto Violin di kiri -->
+        <div class="col-12 col-md-4 mb-3 mb-md-0 text-center">
+          <img src="img/violin 2.jpg" alt="Violin Promo" class="img-fluid rounded" style="max-height: 250px;">
+        </div>
+
+        <!-- Tabel produk -->
+        <div class="col-12 col-md-8">
+          <table class="table table-striped">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Produk</th>
+                <th scope="col">Harga Normal</th>
+                <th scope="col">Harga Diskon (50%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Violin + Buku Panduan</td>
+                <td>Rp 2.000.000</td>
+                <td class="text-danger fw-bold">Rp 1.000.000</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Violin Kayu Jati</td>
+                <td>Rp 3.500.000</td>
+                <td class="text-danger fw-bold">Rp 1.750.000</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Violin Kayu Maple</td>
+                <td>Rp 4.200.000</td>
+                <td class="text-danger fw-bold">Rp 2.100.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+    <!-- episode 9 (bagian 2)-->
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container">
+        <div class="row">
+          
+          <!-- Kolom Alamat -->
+          <div class="col-12 col-md-4 mb-3">
+            <h5>Alamat Toko</h5>
+            <p>
+              Jl. Musik Harmoni No. 88<br>
+              Jakarta Selatan, 12345<br>
+              Indonesia
+            </p>
+          </div>
+          
+          <!-- Kolom Pembayaran -->
+          <div class="col-12 col-md-4 mb-3">
+            <h5>Pembayaran</h5>
+            <ul class="list-unstyled">
+              <li>✔ Bank Transfer (BCA, Mandiri)</li>
+              <li>✔ E-Wallet (OVO, GoPay, DANA)</li>
+              <li>✔ Kartu Kredit / Debit</li>
+            </ul>
+          </div>
+          
+          <!-- Kolom Tentang -->
+          <div class="col-12 col-md-4 mb-3">
+            <h5>Tentang Kami</h5>
+            <p>
+              Kami adalah toko alat musik spesialis violin dengan produk berkualitas
+              dan harga terbaik. Siap melayani pengiriman seluruh Indonesia.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Garis pemisah -->
+        <hr class="border-light">
+
+        <!-- Copyright -->
+        <div class="text-center">
+          <small>© 2025 ViolinStore. All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- episode 3 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top w-100" style="z-index:1030;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/logo bootstrap.jpg" width="50" alt="logo" loading="lazy" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active fw-bold" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+            <li class="nav-item"><a class="nav-link" href="#promo">Promo</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- episode 2 -->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col lima kuning">kolom 1</div>
+            <div class="col lima hijau">kolom 2</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-8 col-lg-2 col-md-4 col-sm-2 merah">baris 2 kolom 1</div>
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 kuning">baris 2 kolom 2</div>
+            <div class="col-xl-2 col-lg-6 col-md-4 col-sm-4 hijau">baris 2 kolom 3</div>
+        </div>
+    </div> -->
+  </body>
+</html>

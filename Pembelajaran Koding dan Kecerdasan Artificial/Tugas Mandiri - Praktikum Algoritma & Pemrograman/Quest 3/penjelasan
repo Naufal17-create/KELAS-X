@@ -1,0 +1,7 @@
+i menentukan batas awal deret setiap baris
+
+j mencetak angka dari i sampai 1
+
+end=" " supaya angkanya berada di baris yang sama
+
+print() kosong untuk pindah ke baris berikutnya

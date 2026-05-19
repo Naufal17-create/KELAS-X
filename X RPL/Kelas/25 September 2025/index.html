@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar css</title>
+    <style>
+        #rumah {
+            width: 80%;
+            margin: auto;
+        }
+        .kompetensi{
+            color: red;
+            font-style: italic;
+            font-size: large;
+        }
+        .pendidikan {
+            height: 500px;
+        }
+        .huruf {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+            font-weight: 100;
+        }
+        .jarak {
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+    </style>
+
+    <style>
+        .box {
+            background-color: red;
+            /* position: absolute;
+            top: 300px; */
+        }
+        .tinggi {
+            height: 150px;
+        }
+        .lebar {
+            width: 100px;
+        }
+        .box-1 {
+            background-color: yellow;
+            position: absolute;
+            top: 50px;
+        }
+        .box-2 {
+            background-color: blue;
+            position: absolute;
+            top: 50px;
+            right: 850px;
+        }
+        .box-3 {
+            background-color: green;
+            position: absolute;
+            top: 50px;
+            left: 200px;
+        }
+        .batas-atas {
+            margin-top: 30px;
+        }
+        .batas-bawah {
+            margin-bottom: 30px;
+        }
+        .batas-dalam-atas {
+            padding-top: 30px;
+        }
+        .batas-dalam-bawah {
+            padding-bottom: 30px;
+        }
+        .batas-kiri {
+            margin-left: 30px;
+        }
+        .batas-kanan {
+            margin-right: 30px;
+        }
+        .batas-dalam-kiri {
+            padding-left: 30px;
+        }
+        .batas-dalam-kanan {
+            padding-right: 30px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="rumah">
+        <div class="huruf pendidikan" style="background-color: lightskyblue;">
+            <h1>Identitas Diri</h1>
+            <h4>Saya lahir di kota Surabaya, 10 Agustus 2009</h4>
+            <h4>Saya adalah seorang pelajar di SMK Negeri 2 Sidoarjo</h4>
+            <h4>Saya adalah satu satu Murid dari kelas X RPL</h4>
+            <h4>Saya tinggal di Oma Pesona Buduran Sidoarjo, blok i1/17</h4>
+            <h4>Saya anak ke 1 dari 3 bersaudara</h4>
+
+        </div>
+        <div class="pendidikan huruf jarak" style="background-color: lightgreen;">
+            <h1>Riwayat Pendidikan</h1>
+            <h3>Saya alumni Sekolah di MTsN 1 Sidoarjo, alumni tahun 2022-2025</h3>
+            <h4></h4>
+        </div>
+        <div class="kompetensi huruf pendidikan jarak" style="background-color: rgb(83, 20, 220);">
+            <h1>Kompetensi</h1>
+        </div>
+    </div>
+    <div class="box batas-dalam-kiri batas-dalam-atas batas-dalam-bawah batas-dalam-kanan">
+        <div class="box-1 lebar batas-bawah batas-dalam-atas batas-dalam-kiri batas batas-dalam-bawah tinggi">
+            box-1
+        </div>
+        <div class="box-2 batas-bawah batas-dalam-atas batas-dalam-bawah batas-dalam-kiri lebar tinggi">
+            box-2
+        </div>
+        <div class="box-3 batas-bawah batas-dalam-atas batas-dalam-bawah batas-dalam-kiri lebar tinggi">
+            box-3
+        </div>
+    </div>
+</body>
+</html>
